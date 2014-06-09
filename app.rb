@@ -10,7 +10,7 @@ get '/' do
 end
 
 get '/contact/:id' do
-  @contact = Contact.all.find(params[:id])
+  @contact = Contact.find(params[:id])
     # binding.pry
   erb :show
 end
